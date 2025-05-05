@@ -8,10 +8,10 @@ import pygame
 
 # Game environment
 
-CELL_WIDTH = 5
-CELL_HEIGHT = 5
-CELL_AMOUNT_X = 200
-CELL_AMOUNT_Y = 100
+CELL_WIDTH = 3
+CELL_HEIGHT = 3
+CELL_AMOUNT_X = 300
+CELL_AMOUNT_Y = 180
 SCREEN_WIDTH = CELL_WIDTH * CELL_AMOUNT_X + (CELL_AMOUNT_X - 1)
 SCREEN_HEIGHT = CELL_HEIGHT * CELL_AMOUNT_Y + (CELL_AMOUNT_Y - 1)
 
@@ -303,6 +303,6 @@ if __name__ == "__main__":
         # flip() the display to put your work on screen
         pygame.display.flip()
 
-        _ = clock.tick(30)  # limits FPS to 60
+        _ = clock.tick(60)  # limits FPS to 60
 
     pygame.quit()
